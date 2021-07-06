@@ -31,8 +31,8 @@ public class MovieSelectController {
     @GetMapping("/movie")
     public String moviename(Model model) throws JsonMappingException, JsonProcessingException, UnsupportedEncodingException {
     	/*複数件数取得する(複数件数取得すると、映画の詳細は取得されない)*/
-    	String randWord = "test";
-    	String year = "2017";
+    	String randWord = "call";
+    	String year = "2020";
     	Random rand = new Random();
     	randWord = URLEncoder.encode(randWord, "UTF-8");
     	JsonNode APIData = JsonPerser("http://www.omdbapi.com/?type=movie&s="+randWord+"&y="+year+"&apikey=f4ac8509");
