@@ -10,7 +10,7 @@ public class DisplayAPIResult {
 
 	public static void main(String[] args){
 		SpringApplication.run(DisplayAPIResult.class, args);
-
+//test
 	}
 
 }
